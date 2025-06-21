@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JTGeats</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <section class="first">
+        <nav>
+            <div class="navbar">
+                <p>JTGeats</p>
+
+                <ul class="nav-links">
+                    <li class="nav-list"><a href="#">Home</a></li>
+                    <li class="nav-list"><a href="#">About</a></li>
+                    <li class="nav-list"><a href="#">Menu</a></li>
+                    <li class="nav-list"><a href="#">Blog</a></li>
+                    <li class="nav-list"><a href="#">Contact</a></li>
+                </ul>
+
+                <ul class="nav-icons">
+                    <li><img src="Images/icons8-search-22.png" alt="search"></li>
+                    <div>
+                        <li class="bag"><img src="Images/icons8-shopping-bag-21.png" alt="Bag" /></li>
+                        <div class="yellow-dot"></div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header>
+            <div class="description">
+                <div>
+                    <p class="home">Authentic Home food in India</p>
+                    <p class="service">JTGeats is a courier service in which authentic home cook food is delivered to a
+                        customer.</p>
+                    <div class="search">
+                        <input type="text" class="search-input" placeholder="Search food you love">
+                        <button class="search-btn">Search</button>
+                    </div>
+                </div>
+                <div>
+                    <img class="cooking" src="Images/cooking.png" alt="">
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- Home Kitchen -->
+    <section class="card-section">
+        <p>Home Kitchen</p>
+        <div id="card-container"></div> <!-- Added container for JS to inject cards -->
+    </section>
+
+
+    <section class="carousel">
+        <p>Popular Items</p>
+
+        <div class="carousel-wrapper">
+            <button class="carousel-btn left left1" id="carousel-left">
+                <img src="images/Polygon-green.png" alt="Left">
+            </button>
+
+            <div class="card-track-wrapper">
+                <div class="card-track" id="carousel-track"></div>
+            </div>
+
+            <button class="carousel-btn right right1" id="carousel-right">
+                <img src="images/Polygon-white.png" alt="Right">
+            </button>
+        </div>
+
+        <div class="center-button">
+            <button class="request-btn">Request a Dish</button>
+        </div>
+    </section>
+
+    <section>
+        <p class="vd1">We are providing best</p>
+        <p class="vd2">home cooked food delivery service.</p>
+        <p class="vd3">Away from home and craving the tasty homemade recipes?</p>
+        <p class="vd4">Choose from a selection of our delicious home cooked dishes </p>
+        <div class="vid-top">
+            <img class="vid" src="Images/row.png" alt="video">
+            <div class="green"></div>
+        </div>
+    </section>
+
+    <section class="form-head">
+        <div class="form-head1">
+            <div>
+                <p class="form-h1">Do you have a question</p>
+                <p class="form-h11">or want to become a seller?</p>
+                <p class="form-h2">Fill this form and our manager will contact you next 48 hours.</p>
+                <form action="">
+                    <input type="text" placeholder="Your Name" class="name" id="name">
+                    <input type="text" placeholder="Your e-mail" class="email" id="email">
+                    <textarea cols="30" rows="10" placeholder="Your message"></textarea>
+                    <input type="submit" value="Submit" class="submit">
+                </form>
+            </div>
+            <div>
+                <img class="delivery" src="Images/delivery.png" alt="Food_delivery">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav class="footer">
+            <div class="navbar">
+                <p>JTGeats</p>
+
+                <ul class="nav-link">
+                    <li class="nav-lis"><a href="#">Home</a></li>
+                    <li class="nav-lis"><a href="#">About</a></li>
+                    <li class="nav-lis"><a href="#">Menu</a></li>
+                    <li class="nav-lis"><a href="#">Blog</a></li>
+                    <li class="nav-lis"><a href="#">Contact</a></li>
+                </ul>
+
+                <ul class="nav-icon">
+                    <li><img src="Images/Facebook.png" alt="Facebook"></li>
+                    <div>
+                        <li class="bag"><img src="Images/insta.png" alt="Instagram" /></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="line"></div>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
