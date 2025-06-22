@@ -29,7 +29,7 @@ images.forEach(item => {
         <span class="card-price">${item.price}</span>
       </div>
       <div class="card-meta">
-        <span class="meta-tag rating"><img src="Images/star.png" alt="star" /> ${item.rating}</span>
+        <span class="meta-tag rating"><img class="star" src="Images/star.png" alt="star" /> ${item.rating}</span>
         <span class="meta-tag duration">${item.duration}</span>
         <span class="meta-tag add"><img src="Images/Card.png" alt="add" /></span>
       </div>
@@ -58,7 +58,7 @@ const track = document.getElementById('carousel-track');
         <div class="card-body">
           <div class="card-header">
             <span>${item.title}</span>
-            <span>${item.price}</span>
+            <span class="item-price">${item.price}</span>
           </div>
           <div class="card-tags">
             <div class="tag">
@@ -77,8 +77,8 @@ const track = document.getElementById('carousel-track');
       track.appendChild(card);
     });
 
-    addQtyHandlers();
-    updateSlider();
+    // addQtyHandlers();
+    // updateSlider();
   }
 
   function updateSlider() {
@@ -127,9 +127,9 @@ const track = document.getElementById('carousel-track');
   });
 
   // Auto Slide
-  setInterval(() => {
-    currentIndex = (currentIndex + 1) % (images.length - 2);
-    updateSlider();
-  }, 3000);
+  // setInterval(() => {
+  //   currentIndex = (currentIndex + 1) % (images.length - 2);
+  //   updateSlider();
+  // }, 3000);
 
   renderCards();
