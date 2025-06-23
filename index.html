@@ -26,13 +26,13 @@
                 </ul>
 
                 <ul class="nav-icons">
-                    <li><img src="Images/search.png" alt="search" class="search1"></li>
+                    <li><a href=""><img src="Images/search.png" alt="search" class="search1"></a></li>
                     <div>
-                        <li class="bag"><img src="Images/bag.png" alt="Bag" /></li>
+                        <li class="bag"><a href=""><img src="Images/bag.png" alt="Bag" /></a></li>
                         <div class="yellow-dot"></div>
                     </div>
                 </ul>
-            </div>  
+            </div>
         </nav>
 
         <!-- Header -->
@@ -84,12 +84,16 @@
     </section>
 
     <section>
-        <p class="vd1">We are providing best</p>
-        <p class="vd2">home cooked food delivery service.</p>
+        <h1 class="vd1">We are providing best</h1>
+        <h1 class="vd2">home cooked food delivery service.</h1>
         <p class="vd3">Away from home and craving the tasty homemade recipes?</p>
         <p class="vd4">Choose from a selection of our delicious home cooked dishes </p>
         <div class="vid-top">
+            <!-- <video width="640" height="360" controls>
+  <source src="videos/sample.mp4" type="video/mp4">
+  </video> -->
             <img class="vid" src="Images/row.png" alt="video">
+
             <div class="green"></div>
         </div>
     </section>
@@ -136,6 +140,16 @@
             <div class="line"></div>
         </nav>
     </footer>
+<div id="food-modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="modal-close" class="modal-close">&times;</span>
+    <img id="modal-image" src="" alt="food" />
+    <h3 id="modal-title"></h3>
+    <p id="modal-price"></p>
+    <p id="modal-rating"></p>
+    <p id="modal-duration"></p>
+  </div>
+</div>
 
 </body>
 
