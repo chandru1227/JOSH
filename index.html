@@ -57,7 +57,7 @@
     <!-- Home Kitchen -->
     <section class="card-section">
         <p>Home Kitchen</p>
-        <div id="card-container"></div> <!-- Added container for JS to inject cards -->
+        <div id="card-container"></div> 
     </section>
 
 
@@ -89,11 +89,14 @@
         <p class="vd3">Away from home and craving the tasty homemade recipes?</p>
         <p class="vd4">Choose from a selection of our delicious home cooked dishes </p>
         <div class="vid-top">
-            <!-- <video width="640" height="360" controls>
-  <source src="videos/sample.mp4" type="video/mp4">
-  </video> -->
-            <img class="vid" src="Images/row.png" alt="video">
-
+            <div class="video-wrapper"
+                style="width: 877px; height: 442px; overflow: hidden; border: 1px solid #ccc; border-radius: 5px;">
+                <video id="promo-video" autoplay muted loop playsinline>
+                    <source src="Images/istockphoto-2178549745-640_adpp_is.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div id="play-icon" class="play-icon">&#9658;</div>
+            </div>
             <div class="green"></div>
         </div>
     </section>
@@ -140,17 +143,26 @@
             <div class="line"></div>
         </nav>
     </footer>
-<div id="food-modal" class="modal hidden">
-  <div class="modal-content">
-    <span id="modal-close" class="modal-close">&times;</span>
-    <img id="modal-image" src="" alt="food" />
-    <h3 id="modal-title"></h3>
-    <p id="modal-price"></p>
-    <p id="modal-rating"></p>
-    <p id="modal-duration"></p>
-  </div>
-</div>
+    <div id="food-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="modal-close" class="modal-close">&times;</span>
+            <img id="modal-image" src="" alt="food" />
+            <h3 id="modal-title"></h3>
+        </div>
+    </div>
 
+    <!-- Request Dish Modal -->
+    <div id="request-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="request-close" class="modal-close">&times;</span>
+            <h3>Request a Dish</h3>
+            <input type="text" placeholder="Dish Name" />
+            <div class="modal-buttons">
+                <button id="cancel-request">Cancel</button>
+                <button id="submit-request">Submit Request</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
